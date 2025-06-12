@@ -7,5 +7,8 @@ import {Component} from '@angular/core';
 })
 
 export class ProductoComponent {
-
+  constructor() {
+    console.log("Cargado el componente de producto");
+    alert("Descuentazo de 10% en todos los productos");
+  }
 }
