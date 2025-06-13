@@ -2,3 +2,8 @@ h2 {
   background-color: blanchedalmond;
   padding: 5px;
 }
+
+p {
+  font-size: 1.2em;
+  color: darkslategray;
+}
