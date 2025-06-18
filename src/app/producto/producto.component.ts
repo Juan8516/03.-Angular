@@ -25,4 +25,9 @@ export class ProductoComponent {
     this.precio;
     this.descripcion;
   }
+
+  ngOnInit() {
+    console.log("Componente Producto inicializado");
+  }
+
 }
