@@ -30,4 +30,12 @@ export class ProductoComponent {
     console.log("Componente Producto inicializado");
   }
 
+  ngDoCheck() {
+    console.log("El nombre del producto ha cambiado");
+  }
+
+  cambiarNombreProducto(){
+    this.nombre = "Lenovo Legion 5 Pro";
+  }
+
 }
