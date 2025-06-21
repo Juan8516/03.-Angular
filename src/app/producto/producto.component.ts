@@ -30,6 +30,10 @@ export class ProductoComponent {
     console.log("Componente Producto inicializado");
   }
 
+  ngAfterViewInit() {
+    console.log("Componente Producto y sus hijos han sido inicializados");
+  }
+
   ngDoCheck() {
     console.log("El nombre del producto ha cambiado");
   }
