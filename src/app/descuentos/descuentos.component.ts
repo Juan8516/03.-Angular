@@ -14,4 +14,12 @@ export class DescuentosComponent {
   public marca: string = "Logitech";
   public descripcionProducto: string = "Un mouse gamer de alta precisión y velocidad.";
   public precio: number = 100;
+
+  ngOnInit() {
+    console.log("Componente Descuentos inicializado");
+  }
+
+  ngOndestroy() {
+    console.log("Componente Descuentos eliminado");
+  }
 }

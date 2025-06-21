@@ -1,6 +1,8 @@
 <h1>{{nombre}}</h1>
 <p>Producto: {{producto}}</p>
+
 <button (click)="cambiarNombreProducto()">Cambiar Producto</button>
+
 <p>Marca: {{marca}}</p>
 <strong>Precio: ${{precio}}</strong>
 <p>Descripcion: {{descripcion}}</p>
@@ -11,3 +13,15 @@
   <li>16" 2.5K (2560 x 1600, WQXGA) 16:10 240Hz OLED Pantalla ROG Nebula</li>
   <li>Almacenamiento 1TB M.2 NVMe™ PCIe® 4.0 SSD</li>
 </ul>
+
+@if(mostrar_descuentos == true) {
+  <button (click)="ocultarDescuentos(false)">Ocultar Descuentos</button>
+} @else {
+  <button (click)="ocultarDescuentos(true)">Mostrar Descuentos</button>
+}
+
+@if(mostrar_descuentos == true) {
+
+  <Mi-Descuentos></Mi-Descuentos>
+
+}

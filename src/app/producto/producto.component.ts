@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { DescuentosComponent } from '../descuentos/descuentos.component';
-import { Usuario } from '../usuario/usuario';
-import { Ventas } from '../ventas/ventas';
 
 @Component({
   selector: 'Mi-Producto',
-  imports: [DescuentosComponent, Usuario, Ventas],
+  standalone: true,
+  imports: [DescuentosComponent],
   templateUrl:'./producto.component.html',
   styleUrl: './producto.component.css',
 })
@@ -17,6 +16,8 @@ export class ProductoComponent {
   public marca: string = 'Asus';
   public precio: number = 8000000;
   public descripcion: string = 'Un potente PC portátil para gamers y profesionales.';
+
+  public mostrar_descuentos: boolean = true;
 
   constructor() {
     this.nombre;
@@ -40,6 +41,10 @@ export class ProductoComponent {
 
   cambiarNombreProducto(){
     this.nombre = "Lenovo Legion 5 Pro";
+  }
+
+  ocultarDescuentos(value: boolean) {
+    this.mostrar_descuentos = value;
   }
 
 }
