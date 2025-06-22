@@ -1,3 +1,15 @@
+a {
+  background-color: black;
+  color: white;
+  padding: 6px;
+}
+
+.existe {
+  background-color: rgb(131, 131, 236);
+  color: white;
+  padding: 8px;
+}
+
 .contenedor_usuario {
   display: flex;
   flex-direction: column;
