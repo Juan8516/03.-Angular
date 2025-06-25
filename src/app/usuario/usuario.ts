@@ -10,4 +10,6 @@ export class Usuario {
 
   webCliReference = "https://docs.angular.lat/cli"
 
+  redirigir = true;
+
 }
