@@ -9,9 +9,11 @@
 
 @if(redirigir == true) {
   <p>El enlace {{webCliReference}} es correcto</p>
-}@else {
+} @else {
   <p>El enlace {{webCliReference}} no es correcto</p>
 }
+
+<button (click)="cambioRedireccion()">Modificar enlace</button>
 
 <h2>Ingresar Usuario</h2>
 
@@ -20,6 +22,7 @@
   <input class="usuario" type="text" usuario placeholder="Usuario" />
   <input class="password" type="text" password placeholder="Password" />
 </div>
+
 
 <br>
 <br>

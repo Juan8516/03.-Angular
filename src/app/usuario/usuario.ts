@@ -12,4 +12,16 @@ export class Usuario {
 
   redirigir = true;
 
+  cambioRedireccion() {
+
+    if(this.redirigir == false) {
+
+      this.redirigir = true;
+
+    } else {
+
+      this.redirigir = false;
+
+    }
+  }
 }
