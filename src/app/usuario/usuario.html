@@ -15,6 +15,43 @@
 
 <button (click)="cambioRedireccion()">Modificar enlace</button>
 
+<h3>Lenguajes de Programación</h3>
+
+<ul>
+  @for(lenguajes of lenguajesProgramacion; track lenguajes) {
+    <li>{{lenguajes}}</li>
+  }
+</ul>
+
+<h3>Marcas de Computadoras</h3>
+
+<ul>
+  @for(marcas of marcasComputadoras; track marcas.id;
+     let indice = $index, contador = $count,
+    par = $even, impar = $odd) {
+
+    <li>{{indice}} {{par}} {{impar}} {{marcas.marca}}</li>
+
+  } @empty {
+    <li>No hay marcas de computadoras</li>
+  }
+</ul>
+
+<h3>Marcas de Monitores</h3>
+
+<ul>
+  @for(marcas of marcasMonitores; track marcas.id;
+     let indice = $index, contador = $count,
+    par = $even, impar = $odd) {
+
+    <li>{{indice}} {{par}} {{impar}} {{marcas.marca}}</li>
+
+  } @empty {
+    <li>No hay marcas de monitores</li>
+  }
+</ul>
+
+
 <h2>Ingresar Usuario</h2>
 
 <br>
