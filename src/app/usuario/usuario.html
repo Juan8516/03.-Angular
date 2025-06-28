@@ -76,3 +76,16 @@
   }
 }
 
+<h2>Algunas cosas mas sobre las Plantillas</h2>
+
+<!--Los ng-container no se renderizan en el DOM-->
+<ng-container>
+  <h4>Esto es un contenedor de angular</h4>
+</ng-container>
+
+<!--Las varibles-->
+@let pais = "Colombia";
+@let saludo = "Saludos desde " + pais;
+
+{{pais}}
+{{saludo}}
