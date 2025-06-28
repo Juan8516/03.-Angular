@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { Ventas } from '../ventas/ventas';
 
 @Component({
   selector: 'app-usuario',
-  imports: [],
+  standalone: true,
+  imports: [Ventas],
   templateUrl: './usuario.html',
   styleUrl: './usuario.css'
 })
@@ -46,4 +48,11 @@ export class Usuario {
 
     }
   }
+
+  usuario = {
+    id: 1,
+    nombre: "Juan Perez",
+    nick: "juanperez",
+    rol: "user",
+  };
 }

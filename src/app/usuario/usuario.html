@@ -60,8 +60,19 @@
   <input class="password" type="text" password placeholder="Password" />
 </div>
 
+@switch (usuario.rol) {
 
-<br>
-<br>
-<br>
+  @case ("admin") {
+    <p>{{usuario.nombre}} es administrador</p>
+    <app-ventas></app-ventas>
+  }
+
+  @case ("user") {
+    <p>{{usuario.nombre}} es usuario</p>
+  }
+
+  @default {
+    <p>{{usuario.nombre}} es invitado</p>
+  }
+}
 
