@@ -57,4 +57,6 @@ export class Usuario {
     nick: "juanperez",
     rol: "user",
   };
+
+  fechaRegistro = new Date(2025, 0, 16);
 }
