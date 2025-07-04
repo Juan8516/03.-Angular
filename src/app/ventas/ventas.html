@@ -5,7 +5,28 @@
 <h2 [ngClass]="colorear ? 'resaltar' : 'destacarMenos'">Marcas de Celulares</h2>
 
 <ul>
-  <li>Iphone16 pro max $6000000</li>
+  <li [ngStyle]="mostrar == 'si' ? {'background-color': 'green'} :
+                                   {'background-color': 'gray'}">Iphone16 pro max $6000000</li>
   <li>Lenovo LOQ 9000000</li>
   <li>Audifonos Sony $580000</li>
 </ul>
+
+<!-- Directiva estructural - poco recomendado -->
+<p [ngStyle]="{
+  'background-color': 'blue',
+  'font-size': '20px',
+  'color': 'white',
+  'font-weight': 'bold',
+  'border': '5px solid black',
+  'border-radius': '10px',
+  'padding': '10px',
+}">
+
+Este es un ejemplo de directivas estructurales y de atributos</p>
+
+<!-- Directiva estructural - recomendado -->
+<p [ngStyle]="misEstilos">
+
+  Este es un ejemplo de directivas estructurales y de atributos, con un objeto de estilos
+
+</p>
