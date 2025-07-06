@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Ventas } from '../ventas/ventas';
 import { ProductoComponent } from '../producto/producto.component';
 import { DatePipe, LowerCasePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
-import { CambiaLetrasPipe } from '../pipes/cambiaLetras.pipe';
+import { CambiaLetrasPipe } from '../../pipes/cambiaLetras.pipe';
 
 @Component({
   selector: 'app-usuario',

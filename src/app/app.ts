@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { ProductoComponent } from "./producto/producto.component";
-import { Usuario } from './usuario/usuario';
-import { Ventas } from './ventas/ventas';
+import { Ventas } from './components/ventas/ventas';
+import { ProductoComponent } from './components/producto/producto.component';
+import { Usuario } from './components/usuario/usuario';
+import { DescuentosComponent } from './components/descuentos/descuentos.component';
+
 
 @Component({
   selector: 'app-root',
