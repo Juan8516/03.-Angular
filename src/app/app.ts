@@ -3,6 +3,7 @@ import { Ventas } from './components/ventas/ventas';
 import { ProductoComponent } from './components/producto/producto.component';
 import { Usuario } from './components/usuario/usuario';
 import { DescuentosComponent } from './components/descuentos/descuentos.component';
+import { config } from './models/config';
 
 
 @Component({
@@ -13,4 +14,6 @@ import { DescuentosComponent } from './components/descuentos/descuentos.componen
 })
 export class App {
   protected title = 'Angular';
+  subTitle = config.subTitle;
+  description = config.description;
 }
