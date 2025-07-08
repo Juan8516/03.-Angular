@@ -1,4 +1,9 @@
 <hr>
 
 <h1>{{titulo}}</h1>
-<h2>{{peliculas}}</h2>
+
+<ul>
+  @for (pelicula of peliculas; track pelicula.id) {
+    <li>{{pelicula.titulo}} - {{pelicula.genero}} - {{pelicula.plataforma}}</li>
+  }
+</ul>
