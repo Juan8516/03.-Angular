@@ -4,13 +4,14 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { Usuario } from './components/usuario/usuario';
 import { DescuentosComponent } from './components/descuentos/descuentos.component';
 import { config } from './models/config';
+import { Peliculas } from "./components/peliculas/peliculas";
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.css',
-  imports: [Ventas]
+  imports: [Peliculas]
 })
 export class App {
   protected title = 'Angular';
