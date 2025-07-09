@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Pelicula } from '../../models/pelicula';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-peliculas',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './peliculas.html',
   styleUrl: './peliculas.css'
 })
@@ -11,6 +12,9 @@ export class Peliculas {
 
   public titulo: string;
   public peliculas: Array<Pelicula>;
+
+  //Trabajo con formularios y binding bidireccional
+  public mi_pelicula: string = "";
 
   constructor() {
     this.titulo = 'Modelo Peliculas';

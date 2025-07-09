@@ -7,3 +7,12 @@
     <li>{{pelicula.titulo}} - {{pelicula.genero}} - {{pelicula.plataforma}}</li>
   }
 </ul>
+
+<h1>Formulario y two way data binding en Angular</h1>
+
+<input type="text" [(ngModel)] = "mi_pelicula"/>
+
+<p>
+  Mi pelicula es:
+<strong>{{mi_pelicula}}</strong>
+</p>
