@@ -16,6 +16,8 @@ export class Peliculas {
   //Trabajo con formularios y binding bidireccional
   public mi_pelicula: string = "";
 
+  public pelisSinDatos: string[] = [];
+
   constructor() {
     this.titulo = 'Modelo Peliculas';
     this.peliculas = [
@@ -29,6 +31,14 @@ export class Peliculas {
     console.log(this.peliculas);
 
     this.peliculas[0].titulo = 'El padrino II';
+  }
+
+  showPelicula() {
+    alert(this.mi_pelicula);
+  }
+
+  addPelicula(){
+    this.pelisSinDatos.push(this.mi_pelicula);
   }
 }
 
