@@ -38,7 +38,12 @@ export class Peliculas {
   }
 
   addPelicula(){
-    this.pelisSinDatos.push(this.mi_pelicula);
+    // this.pelisSinDatos.push(this.mi_pelicula);
+
+    let identificador = this.peliculas[this.peliculas.length-1].id + 1;
+    let nuevaPelicula = new Pelicula(identificador, this.mi_pelicula);
+
+    this.peliculas.push(nuevaPelicula);
   }
 }
 
