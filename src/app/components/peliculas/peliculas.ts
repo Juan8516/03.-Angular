@@ -52,5 +52,17 @@ export class Peliculas {
   borrarPeli(indice: number) {
     this.peliculas.splice(indice, 1);
   }
+
+  haciendoFoco() {
+    console.warn("Foco en el input !!!!");
+  }
+
+  saliendoFoco() {
+    console.warn("Saliendo foco input !!!!!");
+  }
+
+  presionadoTecla(event: KeyboardEvent) {
+    console.info("Estas presionando la tecla: " +event.key);
+  }
 }
 
