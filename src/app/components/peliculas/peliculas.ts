@@ -48,5 +48,9 @@ export class Peliculas {
 
     this.peliculas.push(nuevaPelicula);
   }
+
+  borrarPeli(indice: number) {
+    this.peliculas.splice(indice, 1);
+  }
 }
 
